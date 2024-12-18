@@ -129,7 +129,8 @@ void loadRGBImage () { // function for loading image
 
 void saveRGBImage () { //function for loading image
    int x = 0;
-   char imageFileName[100];
+   char imageFileName[200];
+   int y = 0;
    cout << "Enter the target image file name: ";
    cin >> imageFileName; //take input from user
    strcat (imageFileName, ".bmp"); 
