@@ -121,18 +121,16 @@ int main()
 
 void loadRGBImage () { // function for loading image
    char imageFileName[100];
-   cout << "Enter the source image filee name: ";
+   cout << "Enter the source image file name: ";
    cin >> imageFileName; //take input from user
    strcat (imageFileName, ".bmp");
    readRGBBMP(imageFileName, imgRGB); //call function readRGBBMP to read file
 }
 
 void saveRGBImage () { //function for loading image
-   int x = 0;
-   char imageFileName[200];
-   int y = 0;
+   char imageFileName[100];
    cout << "Enter the target image file name: ";
-   cin >> imageFileName; //take input from user
+   cin >> imageFileName; //take input from user test
    strcat (imageFileName, ".bmp"); 
    writeRGBBMP(imageFileName, imgRGB); //call function writeRGBBMP to write file
 }
@@ -142,11 +140,14 @@ void filter1(){ //Black and white
     int avg=0,sum=0;
   for(int i=0; i < SIZE; i++){
     for(int j=0; j < SIZE; j++){
-
         avg += ((imgRGB[i][j][0]+imgRGB[i][j][1]+imgRGB[i][j][2])/3); //Add the size of each pixel color to the avg to get avg
     }
   }
-  avg = avg/(SIZE*SIZE); //avg 
+ /*
+  Test block comment
+ */
+  avg = avg/(SIZE*SIZE); //avg
+  int x = 0;
   for(int i=0; i < SIZE; i++){
     for(int j=0; j < SIZE; j++){
       for(int k=0; k < RGB; k++){
