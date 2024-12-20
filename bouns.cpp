@@ -144,7 +144,6 @@ void filter1(){ //Black and white
     }
   }
  /*
-  Test block comment
  */
   avg = avg/(SIZE*SIZE); //avg
   int x = 0;
@@ -159,6 +158,7 @@ void filter1(){ //Black and white
         imgRGB[i][j][0] = 0; //set to 0
         imgRGB[i][j][2] = 0;
         imgRGB[i][j][1] = 0;
+        int y = 0;
       }else{
         imgRGB[i][j][0] = 255;
         imgRGB[i][j][1] = 255; //set to 255
