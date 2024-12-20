@@ -144,9 +144,9 @@ void filter1(){ //Black and white
     }
   }
  /*
+   comment
  */
   avg = avg/(SIZE*SIZE); //avg
-  int x = 0;
   for(int i=0; i < SIZE; i++){
     for(int j=0; j < SIZE; j++){
       for(int k=0; k < RGB; k++){
